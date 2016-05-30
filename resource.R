@@ -2,7 +2,7 @@
 # this script measures the correlation between HDI and oil 
 # after adjusting for level of political freedom, and adjusting
 # for spatial autocorrelation. It goes with my blog post at
-#
+#https://theojones.name/2016/05/will-automation-cause-a-resource-curse/
 # Output is in the output.txt file 
 #
 # To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed without any warranty.You should have received a copy of the CC0 Public Domain Dedication along with this script. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
