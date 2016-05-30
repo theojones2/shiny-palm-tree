@@ -1,0 +1,43 @@
+Per cap GDP
+Call:
+lm(formula = money ~ prod + score + longitude + latitude, data = merged)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-27960  -9054  -3889   4553 111776 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.982e+03  5.889e+03  -0.337 0.737151    
+prod         2.757e-03  8.709e-04   3.166 0.002048 ** 
+score        3.184e+03  8.993e+02   3.541 0.000608 ***
+longitude    4.856e+01  3.279e+01   1.481 0.141768    
+latitude     1.588e+02  7.557e+01   2.102 0.038068 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 18950 on 100 degrees of freedom
+Multiple R-squared:  0.2224,	Adjusted R-squared:  0.1913 
+F-statistic: 7.149 on 4 and 100 DF,  p-value: 4.188e-05
+
+HDI
+lm(formula = HDI ~ prod + score + longitude + latitude, data = merged)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.20503 -0.05507  0.01565  0.04695  0.19677 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 4.814e-01  2.904e-02  16.575  < 2e-16 ***
+prod        1.286e-08  4.296e-09   2.993  0.00348 ** 
+score       3.582e-02  4.436e-03   8.075 1.57e-12 ***
+longitude   1.096e-04  1.617e-04   0.678  0.49933    
+latitude    1.658e-03  3.727e-04   4.448 2.25e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.09347 on 100 degrees of freedom
+Multiple R-squared:  0.5201,	Adjusted R-squared:  0.5009 
+F-statistic:  27.1 on 4 and 100 DF,  p-value: 3.074e-15
+
